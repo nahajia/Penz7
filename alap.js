@@ -28,11 +28,17 @@ function szamit(){
     var adoteljes=Math.round(eredmeny-osszeg)*ado/100
     var eredmenyadozasutan=Math.round(eredmeny-adoteljes)
     document.getElementById("eredmeny").innerHTML=`
-    Befizetett összeg: ${osszeg} Ft
+    Befizetett összeg: 
     <br>
-    Kamat: ${eredmeny-osszeg} Ft
+    ${osszeg} Ft
     <br>
-    Levonás (kamatadó): ${adoteljes} Ft
+    Kamat: 
+    <br>
+    ${eredmeny-osszeg} Ft
+    <br>
+    Levonás (kamatadó): 
+    <br>
+    ${adoteljes} Ft
     <br>
     Rendelkezésre álló összeg ${ev} év után:
     <br> 
@@ -61,11 +67,17 @@ function szamitFolyamatos(){
     var adoteljes=Math.round((eredmeny-szam*osszeg)*ado/100)
     var eredmenyadozasutan=Math.round(eredmeny-adoteljes)
     document.getElementById("eredmeny").innerHTML=`
-    Befizetett összeg: ${szam*osszeg} Ft
+    Befizetett összeg: 
     <br>
-    Kamat: ${Math.round(eredmeny-szam*osszeg)} Ft
+    ${szam*osszeg} Ft
     <br>
-    Levonás (kamatadó): ${adoteljes} Ft
+    Kamat: 
+    <br>
+    ${Math.round(eredmeny-szam*osszeg)} Ft
+    <br>
+    Levonás (kamatadó): 
+    <br>
+    ${adoteljes} Ft
     <br>
     Rendelkezésre álló összeg ${ev} év után:
     <br> 
@@ -84,7 +96,9 @@ function szamitHitel(){
     var visszateljes=Math.round(osszeg*Math.pow(1+kamatlab/100,ev))
     
     document.getElementById("eredmeny").innerHTML=`
-    Hitelként felvett összeg: ${osszeg} Ft
+    Hitelként felvett összeg: 
+    <br>
+    ${osszeg} Ft
     <br>
     Visszafizetett összeg ${ev} év után:
     <br> 
