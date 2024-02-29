@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pénzügyek</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="sajat.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+
+        </header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.dszcbaross.hu"><img src="kepek/baross.webp" alt="" class="w-50"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                
+              </div>
+            </div>
+          </nav>       
+          <section class="bg-light w-75 mx-auto">
+            <div class="p-3">
+                <div class="mb-3">
+                    <label for="osszeg" class="form-label">Folyamatosan befizetett összeg:</label>
+                    <input type="number" class="form-control" id="osszeg" value="1000" min="1000" max="500000" step="1000" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="ho" class="form-label">Befizetés gyakorisága:</label>
+                    <select class="form-select" id="ho">
+                      <option value="1">Havonta</option>
+                      <option value="3">Negyedévente</option>
+                      <option value="6">Félévente</option>
+                      <option value="12">Évente</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="kamatlab" class="form-label">Kamatláb (EBKM %):</label>
+                    <input type="number" class="form-control" id="kamatlab" value="1" min="1" max="100" step="1"  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="ev" class="form-label">Évek száma:</label>
+                    <input type="number" class="form-control" id="ev" value="1" min="1" max="10" step="1"  >
+                  </div>
+                  <div class="mb-3">
+                    <label for="ado" class="form-label">Kamatadó:</label>
+                    <input type="number" class="form-control" id="ado" value="15" min="1" max="20" step="1"  >
+                  </div>
+                  <button type="submit" onclick="szamitFolyamatos()" class="btn btn-primary">Számítás</button>
+
+                  <div class="mt-3" id="eredmeny">
+
+                  </div>
+            </div>
+            
+          </section>
+
+      </div>
+       
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="alap.js"></script>
+  </body>
+</html>

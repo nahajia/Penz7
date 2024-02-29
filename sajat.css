@@ -1,0 +1,26 @@
+html {
+    font-size: 1.4em;
+  }
+  
+header{
+    background-image: url("kepek/header.jpg");
+    height: 250px;
+
+    background-position: center;
+    background-size:cover;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 1em;
+      }
+      
+  }
+#eredmeny{
+    height: 200px;
+}
+.szines{
+    color:blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}

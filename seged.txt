@@ -1,0 +1,7 @@
+ <div class="mb-3">
+                  <select class="form-select" id="ho">
+                    <option value="1">Havi lekötés</option>
+                    <option value="6">Félévi lekötés</option>
+                    <option value="12">Éves lekötés</option>
+                  </select>
+                </div>
