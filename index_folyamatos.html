@@ -29,7 +29,7 @@
             <div class="p-3">
                 <div class="mb-3">
                     <label for="osszeg" class="form-label">Folyamatosan befizetett összeg:</label>
-                    <input type="number" class="form-control" id="osszeg" value="1000" min="1000" max="500000" step="1000" >
+                    <input type="number" class="form-control" id="osszeg" value="100000" min="1000" max="500000" step="1000" >
                   </div>
                   <div class="mb-3">
                     <label for="ho" class="form-label">Befizetés gyakorisága:</label>
@@ -37,12 +37,12 @@
                       <option value="1">Havonta</option>
                       <option value="3">Negyedévente</option>
                       <option value="6">Félévente</option>
-                      <option value="12">Évente</option>
+                      <option value="12" selected>Évente</option>
                     </select>
                   </div>
                   <div class="mb-3">
                     <label for="kamatlab" class="form-label">Kamatláb (EBKM %):</label>
-                    <input type="number" class="form-control" id="kamatlab" value="1" min="1" max="100" step="1"  >
+                    <input type="number" class="form-control" id="kamatlab" value="6" min="1" max="100" step="1"  >
                   </div>
                   <div class="mb-3">
                     <label for="ev" class="form-label">Évek száma:</label>
